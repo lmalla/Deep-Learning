@@ -1,0 +1,31 @@
+Overview: The purpose of this analysis was to use neural network machine learning model building to create a binary classifier that is capable of predicting 
+whether or not an applicant will be successfull if funded by Alphabet Soup using the features 
+collected in the provided dataset.
+
+Results:
+	Data Preprocessing:
+		What variable(s) are considered the target(s) for your model?
+		I considered "IS_SUCCESSFUL" as my target for my model.
+		
+		What variable(s) are considered to be the features for your model?
+		I dropped "EIN" & "NAME" column and considered remaining as my features for my model. 
+		
+		What variable(s) are neither targets nor features, and should be removed from the input data?
+		I dropped "EIN" & "NAME" column which I consider are neither targets nor features.
+		
+	Compiling, Training, and Evaluating the Model:
+		How many neurons, layers, and activation functions did you select for your neural network model, and why?
+		I picked (80,30) neurons and 2 layers with activation function "relu". I picked them because they gave me the best accuracy score of 73%.
+		I tried multiple layers with less neurons but this configuration gave me the best accuracy.
+		
+		Were you able to achieve the target model performance?
+		No the target performance score was 75% but I was only able to reach 73%
+		
+		What steps did you take to try and increase model performance?
+		I tried multiple steps to increase model performance but was unsuccessfull. I tried removing noisy variables like 'CLASSIFICATION','APPLICATION_TYPE','STATUS'
+		but it didn't gave me good score. I tried decreasing and adding layers and also changing activation function but they didn't work. I also tried adding additional 
+		neurons but that also didn't made my model better.
+
+
+Summary: Overall my neural network model performed well with an accuracy of 73%. My recommendation would be to try random forest tree model because 
+the data is structured and could perform better than our neural network deep learning model.
