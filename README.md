@@ -1,1 +1,1 @@
-# Deep-Learning
+# Deep Learning Homework: Charity Funding Predictor
